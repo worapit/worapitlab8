@@ -2,8 +2,20 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	if(x > '`' || x < '@'){
+		x = '0';
+		return x;
+	}
+	if( x == 'A'){
+		x = 'Z';
+		return x;
+	}else{
+		x = x - 1;
+		return x;
+	}
 }
+
+
 
 int main(){
 	//Test Case
